@@ -7,7 +7,8 @@ import {
   View,
   StyleSheet,
   Text,
-  StatusBar
+  StatusBar,
+  Platform
 } from 'react-native';
 import AnylineOCR from 'anyline-ocr-react-native-module';
 import SplashScreen from 'react-native-splash-screen';
@@ -240,12 +241,15 @@ class Anyline extends Component {
         {/*showHideTransition={'fade'}*/}
         {/*translucent={true} backgroundColor="rgba(0, 0, 0, 0.1)"*/}
         {/*/>*/}
-        <View style={{height: 80, backgroundColor: theme.color, justifyContent: 'center', alignItems: 'center'}}>
-            <Overview key="OverView"
-                      theme={theme}
-                      openAnyline={this.openAnyline}
-                      checkCameraPermissionAndOpen={this.checkCameraPermissionAndOpen}
-                      disabled={buttonsDisabled}/>
+        <View style={{
+          paddingTop: Platform.OS === 'ios' ? 15 : 0,
+          height: 80, backgroundColor: theme.color, justifyContent: 'center', alignItems: 'center'
+        }}>
+          <Overview key="OverView"
+                    theme={theme}
+                    openAnyline={this.openAnyline}
+                    checkCameraPermissionAndOpen={this.checkCameraPermissionAndOpen}
+                    disabled={buttonsDisabled}/>
         </View>
         <Result
           theme={theme}
