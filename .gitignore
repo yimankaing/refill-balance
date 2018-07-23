@@ -1,0 +1,74 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+.tmp/
+example/RNExampleApp/android/.gradle/
+example/RNExampleApp/android/.idea/
+example/RNExampleApp/android/AnylineReactNative.iml
+example/RNExampleApp/android/app/app.iml
+example/RNExampleApp/android/app/build/
+example/RNExampleApp/android/app/libs/
+example/RNExampleApp/android/build/
+example/RNExampleApp/android/gen/
+example/RNExampleApp/android/.settings
+example/RNExampleApp/ios/build/
+example/RNExampleApp/node_modules/
+example/RNExampleApp/ios/Pods
+# OSX
+#
+.DS_Store
+android/.settings
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+example/RNExampleApp/ios/ip.txt
+# Android/IJ
+#
+*.iml
+.idea
+.gradle
+local.properties
+
+# node.js
+#
+npm-debug.log
+
+#plugin
+plugin/node_modules
+
+#iOS
+ios/Pods
+ios/Podfile.lock
+
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+android/keystores/debug.keystore
+
+.vscode/
+tsconfig.json
+
+#Pods
+example/RNExampleApp/ios/Podfile.lock
+
+yarn-error.log
+example/RNExampleApp/android/app/src/main/assets/index.android.bundle
+example/RNExampleApp/android/app/src/main/assets/index.android.bundle.meta
+example/RNExampleApp/ios/main.jsbundle
+example/RNExampleApp/ios/main.jsbundle.meta

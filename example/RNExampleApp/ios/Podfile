@@ -1,0 +1,23 @@
+project 'RNExampleApp.xcodeproj'
+platform :ios, '9.0'
+
+target 'RNExampleApp' do
+  pod 'React', :path => '../node_modules/react-native'
+  pod 'AnylineReact', path: '../node_modules/anyline-ocr-react-native-module/ios'
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/Yoga'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+end
+
+
+# very important to have, unless you removed React dependencies for Libraries
+# and you rely on Cocoapods to manage it
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == "React"
+            target.remove_from_project
+        end
+    end
+end
